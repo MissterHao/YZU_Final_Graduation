@@ -1,0 +1,11 @@
+<!-- Breadcrumb-->
+<div class="breadcrumb-holder">
+    <div class="container-fluid">
+        <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">{{ path_route[0] }}</a></li>
+        {% if path_route|length > 1 %}
+            <li class="breadcrumb-item active">{{ path_route[1] }}</li>
+        {% endif %}
+        </ul>
+    </div>
+</div>

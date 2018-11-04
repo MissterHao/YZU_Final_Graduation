@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "web-components/header-meta-data" %}
+
+    {% include "web-components/header_link" %}
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    {% include  "web-components/sidebar" %}
+    
+    <div class="page">
+      <!-- navbar-->
+      {% include  "web-components/navbar" %}
+
+      <!-- Breadcrumb-->
+      {% include "web-components/breadcrumb" %}
+
+      <!-- DB 資料庫 年份狀態 -->
+      <section>
+        <div class="container-fluid">
+            <div class="col-lg-12" style="height: 370px; width: 100%;" id="barchartContainer"></div>
+        </div>
+      </section>
+
+      <!-- DB 資料庫 年份細節狀態 -->
+      <section>
+        <div class="container-fluid" style="padding-top:10px;">
+            <div class="col-lg-12" style="float:left;height: 370px; width: 50%;" id="DetailOfYearChart"></div>
+            
+            <div class="col-lg-12" style="float:left;height: 370px; width: 50%;" id="CountryRatioChart"></div>
+        </div>
+      </section>
+      <!-- DB 資料庫 國家比例狀態 -->
+      <!-- <section>
+        <div class="container-fluid">
+        </div>
+      </section> -->
+
+      {% include "web-components/footer" %}
+
+
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <!-- Crart JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script> -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/barchart_dbstatus.js"></script>
+    <script src="js/DetailOfYearChart.js"></script>
+    <script src="js/CountryRatioChart.js"></script>
+
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+
+
+  </body>
+</html>

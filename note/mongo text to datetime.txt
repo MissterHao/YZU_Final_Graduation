@@ -1,0 +1,17 @@
+db.essay.find().forEach(function(doc) { 
+    x= new Timestamp(parseInt(doc.time_tag),1);    
+    doc.time_tag=new Date(x.t*1000);     
+    db.essay.save(doc);  
+})
+
+
+
+
+// 查找日期條件
+db.Essay.find({
+    
+    date:{
+        $lte:"2017/12/31",
+        $gte:"2017/01/01",
+    }
+}).count()

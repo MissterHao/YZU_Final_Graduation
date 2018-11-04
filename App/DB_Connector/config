@@ -1,0 +1,5 @@
+{
+    "dbname":"TAI_INDON",
+    "collection":"Essay",
+    "uri":"mongodb://haoYZU:Henry#0526@140.138.155.206:27017/TAI_INDON"
+}
