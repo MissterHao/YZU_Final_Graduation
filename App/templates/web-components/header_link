@@ -15,3 +15,6 @@
 <link rel="stylesheet" href="css/custom.css">
 <!-- Favicon-->
 <link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- CARDVIDW for my own CardVide -->
+<link rel="stylesheet" href="css/CARDVIEW.css">

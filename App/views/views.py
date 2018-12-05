@@ -41,11 +41,18 @@ def DB_Status():
     )
     # return server.send_static_file("DB_Status.html")
 
-@server.route("/charts.html", methods=["GET",])
+@server.route("/charts", methods=["GET",])
 def charts():
     return render_template(
         "charts.html",
-        path_route=["Home", "Charts"]
+        path_route=["Home", "Charts"],
+        cardItems=[
+            [{"tw-title":"生質柴油", "title":"biodiesel"}, {"tw-title":"水力發電", "title":"hydro"}, 
+            {"tw-title":"乙醇", "title":"ethanol"}, {"tw-title":"地熱", "title":"geothermal"}, {"tw-title":"木板", "title":"Wood-pallets"}],
+
+            [{"tw-title":"潮汐", "title":"tides"}, {"tw-title":"太陽能電視", "title":"solar-TV"}, 
+            {"tw-title":"風力發電", "title":"wind-power"}, {"tw-title":"生物燃料", "title":"biofuel"}, {"tw-title":"生物質", "title":"biomass"}]
+        ]
     )
     # return server.send_static_file("DB_Status.html")
 

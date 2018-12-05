@@ -1,0 +1,143 @@
+<!-- <div style="display: flex;">
+      
+        <div class="card" style="flex: 33.33%;">
+          <img class="CardViewImg" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+          <div class="CardViewTextContainer">
+            <h4><b>hydro</b></h4>
+            <p>水力</p>
+          </div>
+        </div>
+        <div class="card" style="flex: 33.33%;">
+          <img class="CardViewImg" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+          <div class="CardViewTextContainer">
+            <h4><b>hydro</b></h4>
+            <p>水力</p>
+          </div>
+        </div>
+        <div class="card" style="flex: 33.33%;">
+          <img class="CardViewImg" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+          <div class="CardViewTextContainer">
+            <h4><b>hydro</b></h4>
+            <p>水力</p>
+          </div>
+        </div>
+      </div> -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="card  col-lg-3">
+            <img class="col-xs-3 col-sm-3 col-md-3 col-lg-3" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+            <div class="col-lg-9">
+                <div class="card-header">
+                    <h3><b>hydro</b></h3>
+                </div>
+                <div class="card-body">水力</div>
+            </div>
+        </div>
+
+        <div class="card  col-lg-3">
+            <img class="col-xs-3 col-sm-3 col-md-3 col-lg-3" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+            <div class="col-lg-9">
+                <div class="card-header">
+                    <h3><b>hydro</b></h3>
+                </div>
+                <div class="card-body">水力</div>
+            </div>
+        </div>
+
+        <div class="card  col-lg-3">
+            <img class="col-xs-3 col-sm-3 col-md-3 col-lg-3" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+            <div class="col-lg-9">
+                <div class="card-header">
+                    <h3><b>hydro</b></h3>
+                </div>
+                <div class="card-body">水力</div>
+            </div>
+        </div>
+
+        <div class="card  col-lg-3">
+            <img class="col-xs-3 col-sm-3 col-md-3 col-lg-3" src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+            <div class="col-lg-9">
+                <div class="card-header">
+                    <h3><b>hydro</b></h3>
+                </div>
+                <div class="card-body">水力</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="card">
+    <div class="row">
+        <div class="span4">
+            <img style="width: 50px; height: 50px;float:left;" src="img/plus.png" />
+            <div class="content-heading">
+                <h3><b>hydro</b></h3>
+            </div>
+            <p>水力</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <img src="img/plus.png" alt="Plus" style="width: 50px; height: 50px;">
+    <div class="card-header">
+        <h3><b>hydro</b></h3>
+    </div>
+    <div class="card-body">水力</div>
+</div>
+
+
+
+
+
+        <!-- <div class="container-fluid">
+          <div class="row">
+              <div class="card  col-lg-3">
+                  <img class="rounded-circle pull-left mr-2 col-lg-6" src="img/plus.png">
+                  <div class="pull-right col-lg-6">
+                      <h3><b>hydro</b></h3>
+                      <div>水力</div>
+                  </div>
+              </div>
+      
+              <div class="card  col-lg-3">
+                  <img class="rounded-circle pull-left mr-2 col-lg-6" src="img/plus.png">
+                  <div class="pull-right col-lg-6">
+                      <h3><b>hydro</b></h3>
+                      <div>水力</div>
+                  </div>
+              </div>
+      
+              <div class="card  col-lg-3">
+                  <img class="rounded-circle pull-left mr-2 col-lg-6" src="img/plus.png">
+                  <div class="pull-right col-lg-6">
+                      <h3><b>hydro</b></h3>
+                      <div>水力</div>
+                  </div>
+              </div>
+      
+              <div class="card col-lg-3">
+                  <img style="width: 20px; height: 20px"
+                   class="rounded-circle float-left " src="img/plus.png">
+                  <div class="pull-right">
+                      <h3><b>hydro</b></h3>
+                      <div>水力</div>
+                  </div>
+              </div>
+          </div>
+      
+      </div> -->
+        <!-- <div class="card" style="display: inline-block;">
+            <img src="img/plus.png" alt="Plus" style="float: left; width: 50px; height: 50px;">
+
+            <div style="float: left;">
+                <div class="card-header">
+                    <h3><b>hydro</b></h3>
+                </div>
+                <div class="card-body">水力</div>
+            </div>
+        </div> -->
