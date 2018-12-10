@@ -1,0 +1,111 @@
+<div style="font-family:Microsoft JhengHei;" class="panel-info">
+  <form>
+
+    
+
+    <div class="form-group">
+      <label for="Country">選擇資料來源</label>
+      <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
+
+      <div class="can-toggle demo-rebrand-1">
+        <input onclick="check()" class="form-control" name="Country" id="Country" type="checkbox">
+        <label for="Country">
+          <!-- <div class="can-toggle__label-text"></div> -->
+          <div class="can-toggle__switch" data-checked="印尼" data-unchecked="泰國"></div>
+        </label>
+      </div>
+
+    </div>
+
+
+    <div class="form-group">
+      <label for="years">Example multiple select</label>
+      <select multiple name="years" class="form-control" id="years">
+        
+        {% for n in range(2009, 2019, 1) %}
+          <option>{{ n }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+
+    <script>
+    var btn = document.getElementById("analysis");
+    var Country = "Tai";
+
+    function  analysis(){
+      var years = $('#years').val();
+      var country = Country;
+      console.log(years, country);
+      
+      var sJson = JSON.stringify({ 
+        years: years, 
+        country: country
+      });
+
+      var xhttp;
+      xhttp=new XMLHttpRequest();
+      var url = "http://localhost:5000/api/lda/setting";
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              // text = xhttp.responseText;
+              // data = JSON.parse(text);
+              // __DATA_FOR_DB_STATUS__ = data; // Backup Data
+              // console.log(__DATA_FOR_DB_STATUS__);
+              // callback_barchart("barchartContainer", data["year_count"]);
+          }
+      };
+      xhttp.open("POST", url, true);
+      xhttp.setRequestHeader("Content-Type", "application/json");
+      xhttp.send(sJson);
+
+      // $.ajax({
+      //   url: ",
+      //     // url: "localhost:5000/api/lda/setting",
+      //     type: "GET",
+      //     dataType: "json",
+      //     data: sJson,
+      //     success: function (msg) {
+      //       console.log("Success Setting.")
+      //     },
+      //     statusCode: {
+      //         403: function (response) {
+      //           console.log("403 Forbidend.")
+      //         }
+      //     }
+      // })
+
+      
+    }
+
+    function check(){
+      if(Country == "Tai"){
+        Country = "Indon";
+      }else{
+        Country = "Tai";
+      }
+    }
+    </script>
+
+
+    
+
+   </form>
+   <button id="analysis" onclick="analysis()" class="btn btn-primary">分析</button>
+</div>
+
+
+
+
+
+
+
+    <!-- <b>選擇資料來源</b>
+<div class="can-toggle demo-rebrand-1">
+  <input name="Country" id="Country" type="checkbox">
+  <label for="Country">
+    <div class="can-toggle__label-text"></div>
+    <div class="can-toggle__switch" data-checked="印尼" data-unchecked="泰國"></div>
+  </label>
+</div> -->
+

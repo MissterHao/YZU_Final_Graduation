@@ -15,6 +15,9 @@ from App.api.db_status import api as db_status_blueprint
 server.register_blueprint(db_status_blueprint)
 
 
+# Api Serve
+from App.api.LDA import api as lda_blueprint
+server.register_blueprint(lda_blueprint)
 
 
 

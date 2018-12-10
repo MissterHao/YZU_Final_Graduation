@@ -4,6 +4,8 @@
     {% include "web-components/header-meta-data" %}
     <!-- Bootstrap CSS-->
     {% include "web-components/header_link" %}
+    <link rel="stylesheet" href="css/toggleBtn.css">
+    <link rel="stylesheet" href="css/toggle.css">
   </head>
   <body>
     <!-- Side Navbar -->
@@ -15,8 +17,48 @@
 
       <!-- Breadcrumb-->
       {% include "web-components/breadcrumb" %}
+      <!-- ================================    PAGE CONTENT    =====================================-->
+
+      
+      <div class="container-fluid">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">設定</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Tai-tab" data-toggle="tab" href="#Tai" role="tab" aria-controls="Tai" aria-selected="false">泰國</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Indon-tab" data-toggle="tab" href="#Indon" role="tab" aria-controls="Indon" aria-selected="false">印尼</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  {% include "LDA_Component/settingPanel" %}
+              </div>
+              <div class="tab-pane fade" id="Tai" role="tabpanel" aria-labelledby="Tai-tab">
+                  {% include "LDA_Component/TaiPanel" %}
+              </div>
+              <div class="tab-pane fade" id="Indon" role="tabpanel" aria-labelledby="Indon-tab">
+                  {% include "LDA_Component/IndonPanel" %}
+              </div>
+            </div>
 
 
+
+
+      </div>
+      
+
+
+
+
+
+
+
+
+
+      <!-- ================================    PAGE CONTENT    =====================================-->
       {% include "web-components/footer" %}
 
 

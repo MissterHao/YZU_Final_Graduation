@@ -1,20 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     {% include "web-components/header-meta-data" %}
-    
+
     {% include "web-components/header_link" %}
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Side Navbar -->
     {% include "web-components/sidebar" %}
-    
+
     <div class="page">
-      <!-- navbar-->
-      {% include "web-components/navbar" %}
-      
-      {% include "web-components/footer" %}
+        <!-- navbar-->
+        {% include "web-components/navbar" %}
+
+        <div style="height: 20px;">&nbsp;</div>
+        <div class="container-fluid">
+            <!-- Page Header-->
+            <header>
+                <h1 style="font-family:Microsoft JhengHei;" class="h1 display"><b>印尼、泰國綠色能源創新系統之研究分析</b></h1>
+            </header>
+        </div>
+        <div style="height: 20px;">&nbsp;</div>
+        <div style="font-family:Microsoft JhengHei;" class="container-fluid">
+            <div class="row">
+                <div class='col'>
+                    <div class="card">
+                        <div class="card-header d-flex align-items-center">
+                            <h2 class="col text-center"><b>發現問題</b></h2>
+                        </div>
+                        <div class="card-body">
+                            當前政府為了因應新南向政策發展的需求，希望針對東南亞能源方面的政策發展進行研究。
+                            <!-- ========================  FLAG  =========================== -->
+                            <div style="height: 20px;">&nbsp;</div>
+                            <div class="row">
+                                <h2 class="col text-center"><b>資料來源</b></h2>
+                            </div>
+                            <div class="row">
+                                <div class='col'>
+                                    <img style="width: 60px; height:60px;" class="mx-auto d-block rounded" src="img/BBC.png" />
+                                </div>
+                                <div class='col'>
+                                    <img style="width: 60px; height:60px;" class="mx-auto d-block rounded" src="img/Indonesia.png" />
+                                </div>
+                                <div class='col'>
+                                    <img style="width: 60px; height:60px;" class="mx-auto d-block  rounded" src="img/Thailand.png" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class='text-center col'>
+                                    <div class="mx-auto d-block">
+                                        BBC
+                                    </div>
+                                </div>
+                                <div class='text-center col'>
+                                    <div class="mx-auto d-block">
+                                        Indonesia
+                                    </div>
+                                </div>
+                                <div class='text-center col'>
+                                    <div class="mx-auto d-block">
+                                        Thailand
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ========================  FLAG  =========================== -->
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='col'>
+                    <div class="card">
+                        <div class="card-header d-flex align-items-center">
+                            <h2 class="col text-center"><b>解決需求</b></h2>
+                        </div>
+                        <div class="card-body">
+                            以文字探勘(Text
+                            Mining)的技術應用於文本分析上，傳統分析模式是以大量人力閱覽多篇文章，並以人類閱讀後大腦概括出的文章重點做分析，但傳統方法需耗費大量的人力與時間並且能概括的文章數量不多。現今可以大數據分析方式，先針對不同的網站設定爬蟲規則，利用爬蟲機器人大量抓取不同網站新聞資料，並針對網頁進行架構化的分析，抓取出網頁文章標題時間等資訊並存入資料庫中以利之後的分析。
+                            接者以主流的文字探勘方法取得隱藏在大量文字中的訊息，例如: 詞頻、主題模型預測(Topic Modeling)[2]、文檔矩陣(TDF)等。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Page Header-->
+            <header>
+                <h1 style="font-family:Microsoft JhengHei;" class="h1 display"><b>Result</b></h1>
+            </header>
+            <div class="row">
+                <div class="col card">
+                    <div class="card-header d-flex align-items-center">
+                        <h2 class="col text-center"><b>泰國綠能方面</b></h2>
+                    </div>
+                    <div class="card-body">
+                            透過關鍵字分析找出泰國<br>
+                            在 <b style="color:red">hydro(水力)</b> 跟 <b style="color:red">ethanol(乙醇)</b> 有非常高出現頻率
+                            <ul>
+                                <li>泰國將大幅提升生質能源，其中乙醇消費量預計從2015年的11.8億升到2036年將達到41億升</li>
+                                <li>泰國在水力發電為最大宗的再生能源，每年可產7000MW</li>
+                            </ul>                            
+                    </div>
+
+                </div>
+                <div class="col card border-left">
+                    <div class="card-header d-flex align-items-center">
+                        <h2 class="col text-center"><b>印尼綠能方面</b></h2>
+                    </div>
+                    <div class="card-body">
+                            將在特定地區發展特殊綠能<br>
+                            <ul>
+                                <li><b style="color:red">Yogyakarta(DIY)</b> 地區未來規畫朝向發展生質能</li>
+                                <li><b style="color:red">Sulawesi Utara </b>地區未來規畫朝向發展地熱</li>
+                                <li>多項綠能同時發展</li>
+                            </ul>                            
+                    </div>
+                </div> 
+            </div>
+            
+
+            <div class="row">
+
+                <div class="col card">
+                    <div class="card-header d-flex align-items-center">
+                        <h2 class="col text-center"><b>Reference</b></h2>
+                    </div>
+                    <div class="card-body">
+                        <ol class="list-group list-group-flush ">
+                            <li class="list-group-item">Bird, S., Klein, E., & Loper, E. (2009). Natural language
+                                processing with
+                                Python: analyzing text with the natural language toolkit. " O'Reilly Media, Inc.".</li>
+                            <li class="list-group-item">Řehůřek, R., & Sojka, P. (2011). Gensim—Statistical Semantics
+                                in Python.</li>
+                            <li class="list-group-item">D3JS iGraph node with
+                                id--https://bl.ocks.org/pram/fb6975acc5de7c24de560def3eecb23a</li>
+                            <li class="list-group-item">Jin, Y. (2017). Development of Word Cloud Generator Software
+                                Based on
+                                Python. Procedia engineering, 174, 788-792.</li>
+                            <li class="list-group-item">Carter, B. (2016). Mining Unstructured User Reviews with
+                                Python. Text
+                                Mining and Visualization: Case Studies Using Open-Source Tools, 40, 95.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        {% include "web-components/footer" %}
     </div>
+
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
@@ -27,5 +177,6 @@
     <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
-  </body>
+</body>
+
 </html>
